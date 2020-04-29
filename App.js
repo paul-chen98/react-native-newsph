@@ -71,6 +71,10 @@ const HomeScreen = (props) => {
 			//rightComponent={{ text: {curdate}, style: { color: '#fff', fontSize: 22 }  }}
 		/>
 
+		<Text style={{justifyContent: 'center', textAlign: 'center'}}>
+			API: https://newsapi.org/
+		</Text>
+
 		<SafeAreaView >
 			<FlatList
 				data={props.articles}
@@ -103,6 +107,9 @@ const HomeScreen = (props) => {
 				keyExtractor={item => item.key}
 			/>
 	</SafeAreaView>
+	<Text>
+		Data Source: https://newsapi.org/
+	</Text>
   </View>
 
    
@@ -127,7 +134,11 @@ const styles = StyleSheet.create({
     	width: 330,
     	height: 150,
     	marginBottom: 10,
-  	},
+	  },
+	paddingbtm:
+	{
+		marginBottom: 10,
+	},
 });
 
 
